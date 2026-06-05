@@ -77,7 +77,7 @@ body {
 }
 
 .hero-bg-bangkok {
-    background-image: url('Image/Bangkok.png');
+    background-image: url('./Image/Bangkok.png');
     background-size: cover;
     background-position: center;
 }
@@ -133,6 +133,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .section.alt {
@@ -141,28 +142,28 @@ body {
 
 /* Background Images for Sections */
 .section-bg-bangkok {
-    background-image: url('Image/Bangkok.png');
+    background-image: url('./Image/Bangkok.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .section-bg-temple {
-    background-image: url('Image/Temple.png');
+    background-image: url('./Image/Temple.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .section-bg-floating {
-    background-image: url('Image/FloatingMarket.png');
+    background-image: url('./Image/FloatingMarket.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .section-bg-ricefield {
-    background-image: url('Image/RiceField.png');
+    background-image: url('./Image/RiceField.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
