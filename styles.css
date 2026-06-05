@@ -118,10 +118,50 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .section.alt {
     background: #f8f9fa;
+}
+
+/* Background Images for Sections */
+.section-bg-bangkok {
+    background-image: url('Image/Bangkok.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-bg-temple {
+    background-image: url('Image/Temple.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-bg-floating {
+    background-image: url('Image/FloatingMarket.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Purple Gradient for SoftPower */
+.section-purple {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.section-purple h2,
+.section-purple p {
+    color: white;
+}
+
+/* Overlay for better text readability */
+.section-overlay {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 3rem 0;
+    width: 100%;
 }
 
 .section h2 {
@@ -161,27 +201,6 @@ body {
     color: #444;
 }
 
-/* Image Gallery */
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.section-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.section-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
 /* SoftPower Grid */
 .softpower-grid {
     display: grid;
@@ -191,7 +210,7 @@ body {
 }
 
 .softpower-item {
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -200,8 +219,9 @@ body {
 }
 
 .softpower-item:hover {
+    background: white;
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .softpower-icon {
@@ -280,6 +300,18 @@ body {
     color: white;
     padding: 2rem 0;
     text-align: center;
+    position: relative;
+}
+
+.footer-bg-ricefield {
+    background-image: url('Image/RiceField.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-overlay {
+    background: rgba(31, 41, 55, 0.85);
+    padding: 2rem 0;
 }
 
 /* Animations */
