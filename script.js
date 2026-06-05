@@ -61,7 +61,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all cards and features
-document.querySelectorAll('.card, .feature').forEach(el => {
+document.querySelectorAll('.card, .feature, .softpower-item, .story-content p').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';

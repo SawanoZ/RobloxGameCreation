@@ -84,8 +84,15 @@ body {
 
 .subtitle {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.subtitle-small {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease-out 0.3s backwards;
 }
 
 .cta-button {
@@ -129,6 +136,69 @@ body {
     text-align: center;
     margin-bottom: 2rem;
     color: #666;
+}
+
+.section p.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    text-align: justify;
+    color: #444;
+}
+
+/* Story Content */
+.story-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.story-content p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* SoftPower Grid */
+.softpower-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.softpower-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.softpower-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.softpower-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.softpower-item h3 {
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.softpower-item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
 }
 
 /* Cards */
